@@ -81,10 +81,10 @@ function onUserResponse(optDiv) {
 
 var isBackSide = true;
 function cardFlip(ev) {
-    currCard = document.querySelector('.card');
+    currCard = document.querySelector('.card-guess');
     if (isBackSide === true) {
         currCard.classList.add('cardFlip');
-        currCard.innerHTML = `<img src="img/${answer.photo()}">מי אני?</img>`;
+        currCard.innerHTML = `<img class="card-img" src="img/${answer.photo()}" >`;
         isBackSide = false;
 
     } else if (isBackSide === false){

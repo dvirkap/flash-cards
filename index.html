@@ -11,16 +11,17 @@
 </head>
 
 <body>
-    <div class="container col">
-        <div class="card bg-info btn" onclick="cardFlip(event)">
+    <div class="container">
+        <div class="card-guess btn btn-light" onclick="cardFlip(event)">
             <h2>נחשו מי אני</h2>
         </div>
-
-        <div class="memoryBox container">
+        <div class="memoryBox">
             <div class="row">
                 <div class="card1 col btn btn-light" onclick="onUserResponse(this)"></div>
                 <div class="card2 col btn btn-light" onclick="onUserResponse(this)"></div>
-                <div class="w-100"></div>
+            </div>
+                
+            <div class="row">
                 <div class="card3 col btn btn-light" onclick="onUserResponse(this)"></div>
                 <div class="card4 col btn btn-light" onclick="onUserResponse(this)"></div>
             </div>
